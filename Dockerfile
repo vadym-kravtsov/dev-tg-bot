@@ -7,7 +7,6 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PATH="/engine/.venv/bin:$PATH"
 
 WORKDIR /engine
-
 RUN groupadd -r appuser && useradd -r -g appuser -s /usr/sbin/nologin appuser
 
 COPY pyproject.toml uv.lock ./
